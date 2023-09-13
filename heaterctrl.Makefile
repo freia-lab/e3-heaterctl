@@ -25,7 +25,7 @@ EXCLUDE_ARCHS += linux-corei7-poky
 # Since this file (heaterctrl.Makefile) is copied into
 # the module directory at build-time, these paths have to be relative
 # to that path
-APP := heaterctrlApp
+APP := .
 APPDB := $(APP)/Db
 APPSRC := $(APP)/src
 
@@ -57,10 +57,13 @@ SCRIPTS += $(wildcard ../iocsh/*.iocsh)
 #
 #     SUBS = $(wildcard $(APPDB)/*.substitutions)
 #     TMPS = $(wildcard $(APPDB)/*.template)
+SUBS = $(wildcard $(APPDB)/*.substitutions)
 
 USR_DBFLAGS += -I . -I ..
 USR_DBFLAGS += -I $(EPICS_BASE)/db
 USR_DBFLAGS += -I $(APPDB)
+USR_DBFLAGS += -I $(E3_SITEMODS_PATH)/std/$(STD_DEP_VERSION)/db
+USR_DBFLAGS += -I $(E3_SITEMODS_PATH)/daq6510/$(DAQ6510_DEP_VERSION)/db
 
 .PHONY: vlibs
 vlibs:

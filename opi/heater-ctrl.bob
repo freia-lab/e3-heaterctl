@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-09-11 14:52:37 by konrad-->
+<display version="2.0.0">
+  <name>heaters-ctrl</name>
+  <macros>
+    <P>CstatV-AC:</P>
+  </macros>
+  <width>1480</width>
+  <height>960</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>Heaters Control</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>550</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <macros>
+      <PID>PID1</PID>
+      <TITLE>Test controller</TITLE>
+    </macros>
+    <file>helper-opi-files/pid_control.bob</file>
+    <x>1050</x>
+    <width>360</width>
+    <height>260</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_1</name>
+    <macros>
+      <PID>PID1</PID>
+      <TITLE>Test controller</TITLE>
+    </macros>
+    <file>helper-opi-files/pid_parameters.bob</file>
+    <x>710</x>
+    <width>330</width>
+    <height>330</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_2</name>
+    <macros>
+      <PID>PID1</PID>
+      <TITLE>Test controller</TITLE>
+    </macros>
+    <file>helper-opi-files/pid_plot_control.bob</file>
+    <y>50</y>
+    <width>710</width>
+    <height>410</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_3</name>
+    <macros>
+      <PID>PID1</PID>
+      <TITLE>Test controller</TITLE>
+    </macros>
+    <file>helper-opi-files/pid_plot_readback.bob</file>
+    <y>470</y>
+    <width>620</width>
+    <height>480</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_4</name>
+    <macros>
+      <PID>PID1</PID>
+      <TITLE>Test controller</TITLE>
+    </macros>
+    <file>helper-opi-files/pid_extra.bob</file>
+    <x>620</x>
+    <y>470</y>
+    <width>520</width>
+    <height>360</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_5</name>
+    <macros>
+      <CHAN>1</CHAN>
+      <DEV>HMP4040</DEV>
+    </macros>
+    <file>../../freia-symbols/display-builder/heater-ctrl/stat_template.bob</file>
+    <x>1120</x>
+    <y>310</y>
+    <width>360</width>
+    <height>460</height>
+  </widget>
+</display>

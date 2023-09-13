@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-09-11 13:40:15 by konrad-->
+<display version="2.0.0">
+  <name>pid-extra</name>
+  <width>500</width>
+  <height>400</height>
+  <widget type="label" version="2.0.0">
+    <name>text #6</name>
+    <text>$(TITLE)</text>
+    <width>300</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #9</name>
+    <text>$(P)$(PID)</text>
+    <y>30</y>
+    <width>300</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name).PROC</pv_name>
+        <value>1</value>
+        <description>STOP PID, Set Ctrl to 0</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(PID)Stop</pv_name>
+    <x>30</x>
+    <y>70</y>
+    <width>220</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Tweak step</text>
+    <x>40</x>
+    <y>110</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(P)$(PID)SP_tweak</pv_name>
+    <x>150</x>
+    <y>110</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Tweak the SP</text>
+    <x>40</x>
+    <y>160</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name).PROC</pv_name>
+        <value>0</value>
+        <description>UP</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(PID)SP_tweak_up</pv_name>
+    <x>150</x>
+    <y>140</y>
+    <width>60</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_2</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name).PROC</pv_name>
+        <value>0</value>
+        <description>DOWN</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(PID)SP_tweak_down</pv_name>
+    <x>150</x>
+    <y>170</y>
+    <width>60</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Tweak step</text>
+    <x>280</x>
+    <y>110</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_1</name>
+    <pv_name>$(P)$(PID)OUT_tweak</pv_name>
+    <x>390</x>
+    <y>110</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Tweak the output </text>
+    <x>250</x>
+    <y>160</y>
+    <width>130</width>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_3</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name).PROC</pv_name>
+        <value>0</value>
+        <description>UP</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(PID)OUT_tweak_up</pv_name>
+    <x>390</x>
+    <y>140</y>
+    <width>60</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_4</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name).PROC</pv_name>
+        <value>0</value>
+        <description>DOWN</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(PID)OUT_tweak_down</pv_name>
+    <x>390</x>
+    <y>170</y>
+    <width>60</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <macros>
+      <PV>$(P)$(PID)_limits</PV>
+    </macros>
+    <x>50</x>
+    <y>240</y>
+    <width>270</width>
+    <height>110</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_2</name>
+      <pv_name>$(PV).A</pv_name>
+      <x>170</x>
+      <y>30</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>$(PV).DESC</pv_name>
+      <x>110</x>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(PV).CMTA</pv_name>
+      <y>30</y>
+      <width>150</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(PV).CMTB</pv_name>
+      <y>60</y>
+      <width>150</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_4</name>
+      <pv_name>$(PV).B</pv_name>
+      <x>170</x>
+      <y>60</y>
+    </widget>
+  </widget>
+</display>

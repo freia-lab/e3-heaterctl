@@ -10,6 +10,7 @@
 core.*
 *-loc/*.Makefile
 heaterctrl/*.Makefile
+heaterctrl/O.*
 cellMods/
 testMods*/
 *PVs.list
