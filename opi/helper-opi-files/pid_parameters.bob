@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-09-22 10:59:57 by konrad-->
 <display version="2.0.0">
   <name>pid_parameters</name>
   <x>632</x>
   <y>299</y>
   <width>305</width>
   <height>315</height>
-  <background_color>
-    <color red="187" green="187" blue="187">
-    </color>
-  </background_color>
   <grid_visible>false</grid_visible>
   <grid_step_x>5</grid_step_x>
   <widget type="group" version="2.0.0">
@@ -24,24 +21,13 @@
       <text>P</text>
       <x>157</x>
       <width>10</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
+      <height>18</height>
       <auto_size>true</auto_size>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>text update #12</name>
       <pv_name>$(P)$(PID).P</pv_name>
       <x>174</x>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="115" green="255" blue="107">
-        </color>
-      </background_color>
       <format>1</format>
       <show_units>false</show_units>
       <horizontal_alignment>2</horizontal_alignment>
@@ -52,36 +38,22 @@
       <text>I</text>
       <x>157</x>
       <y>25</y>
-      <width>10</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
+      <width>5</width>
+      <height>18</height>
       <auto_size>true</auto_size>
     </widget>
     <widget type="label" version="2.0.0">
       <name>text #19</name>
       <text>KP</text>
       <x>10</x>
-      <width>20</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
+      <width>21</width>
+      <height>18</height>
       <auto_size>true</auto_size>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>text entry #22</name>
       <pv_name>$(P)$(PID).KP</pv_name>
       <x>35</x>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="115" green="223" blue="255">
-        </color>
-      </background_color>
       <format>1</format>
       <show_units>false</show_units>
       <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -91,11 +63,8 @@
       <text>KI</text>
       <x>10</x>
       <y>25</y>
-      <width>20</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
+      <width>16</width>
+      <height>18</height>
       <auto_size>true</auto_size>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -103,14 +72,6 @@
       <pv_name>$(P)$(PID).KI</pv_name>
       <x>35</x>
       <y>25</y>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="115" green="223" blue="255">
-        </color>
-      </background_color>
       <format>1</format>
       <show_units>false</show_units>
       <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -120,11 +81,8 @@
       <text>D</text>
       <x>157</x>
       <y>50</y>
-      <width>10</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
+      <width>13</width>
+      <height>18</height>
       <auto_size>true</auto_size>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -132,14 +90,6 @@
       <pv_name>$(P)$(PID).D</pv_name>
       <x>174</x>
       <y>50</y>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="115" green="255" blue="107">
-        </color>
-      </background_color>
       <format>1</format>
       <show_units>false</show_units>
       <horizontal_alignment>2</horizontal_alignment>
@@ -150,11 +100,8 @@
       <text>KD</text>
       <x>10</x>
       <y>50</y>
-      <width>20</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
+      <width>23</width>
+      <height>18</height>
       <auto_size>true</auto_size>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -162,14 +109,6 @@
       <pv_name>$(P)$(PID).KD</pv_name>
       <x>35</x>
       <y>50</y>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="115" green="223" blue="255">
-        </color>
-      </background_color>
       <format>1</format>
       <show_units>false</show_units>
       <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -180,10 +119,6 @@
       <x>31</x>
       <y>129</y>
       <width>80</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
       <horizontal_alignment>2</horizontal_alignment>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -191,14 +126,6 @@
       <pv_name>$(P)$(PID).OVAL</pv_name>
       <x>116</x>
       <y>129</y>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="115" green="255" blue="107">
-        </color>
-      </background_color>
       <format>1</format>
       <show_units>false</show_units>
       <horizontal_alignment>2</horizontal_alignment>
@@ -210,10 +137,6 @@
       <x>31</x>
       <y>104</y>
       <width>80</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
       <horizontal_alignment>2</horizontal_alignment>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -221,14 +144,6 @@
       <pv_name>$(P)$(PID).ERR</pv_name>
       <x>116</x>
       <y>104</y>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="115" green="255" blue="107">
-        </color>
-      </background_color>
       <format>1</format>
       <show_units>false</show_units>
       <horizontal_alignment>2</horizontal_alignment>
@@ -239,14 +154,6 @@
       <pv_name>$(P)$(PID).I</pv_name>
       <x>174</x>
       <y>25</y>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="115" green="223" blue="255">
-        </color>
-      </background_color>
       <format>1</format>
       <show_units>false</show_units>
       <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -257,10 +164,6 @@
       <x>31</x>
       <y>79</y>
       <width>80</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
       <horizontal_alignment>2</horizontal_alignment>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -268,14 +171,6 @@
       <pv_name>$(P)$(PID).DT</pv_name>
       <x>116</x>
       <y>79</y>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="115" green="223" blue="255">
-        </color>
-      </background_color>
       <format>1</format>
       <show_units>false</show_units>
       <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -285,10 +180,6 @@
       <text>Setpoint high limit</text>
       <y>180</y>
       <width>190</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
       <horizontal_alignment>2</horizontal_alignment>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -296,14 +187,6 @@
       <pv_name>$(P)$(PID).HOPR</pv_name>
       <x>195</x>
       <y>180</y>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="115" green="223" blue="255">
-        </color>
-      </background_color>
       <format>1</format>
       <show_units>false</show_units>
       <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -314,10 +197,6 @@
       <x>10</x>
       <y>155</y>
       <width>180</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
       <horizontal_alignment>2</horizontal_alignment>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -325,14 +204,6 @@
       <pv_name>$(P)$(PID).LOPR</pv_name>
       <x>195</x>
       <y>155</y>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="115" green="223" blue="255">
-        </color>
-      </background_color>
       <format>1</format>
       <show_units>false</show_units>
       <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -343,10 +214,6 @@
       <x>1</x>
       <y>230</y>
       <width>190</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
       <horizontal_alignment>2</horizontal_alignment>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -354,14 +221,6 @@
       <pv_name>$(P)$(PID).DRVH</pv_name>
       <x>196</x>
       <y>230</y>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="115" green="223" blue="255">
-        </color>
-      </background_color>
       <format>1</format>
       <show_units>false</show_units>
       <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -372,10 +231,6 @@
       <x>11</x>
       <y>205</y>
       <width>180</width>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
       <horizontal_alignment>2</horizontal_alignment>
     </widget>
     <widget type="textentry" version="3.0.0">
@@ -383,14 +238,6 @@
       <pv_name>$(P)$(PID).DRVL</pv_name>
       <x>196</x>
       <y>205</y>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="16.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="115" green="223" blue="255">
-        </color>
-      </background_color>
       <format>1</format>
       <show_units>false</show_units>
       <border_alarm_sensitive>false</border_alarm_sensitive>
