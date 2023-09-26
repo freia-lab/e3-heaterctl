@@ -1,0 +1,41 @@
+record(aSub, "$(P)$(DEV):Set1-arr")
+{
+  field(DESC, "Create an array of data")
+  field(INPA, "$(P)$(DEV):Chan01:RdTemp")
+  field(FTA, "DOUBLE")
+  field(INPB, "$(P)$(DEV):Chan02:RdTemp")
+  field(FTB, "DOUBLE")
+  field(INPC, "$(P)$(DEV):Chan03:RdTemp")
+  field(FTC, "DOUBLE")
+  field(INPD, "$(P)$(DEV):Chan04:RdTemp")
+  field(FTD, "DOUBLE")
+  field(INPE, "$(P)$(DEV):Chan05:RdTemp")
+  field(FTE, "DOUBLE")
+  field(INPF, "$(P)$(DEV):Chan06:RdTemp")
+  field(FTF, "DOUBLE")
+  field(INPG, "$(P)$(DEV):Chan07:RdTemp")
+  field(FTG, "DOUBLE")
+  field(INPH, "$(P)$(DEV):Chan08:RdTemp")
+  field(FTH, "DOUBLE")
+  field(INPI, "$(P)$(DEV):Chan09:RdTemp")
+  field(FTI, "DOUBLE")
+  field(INPJ, "$(P)$(DEV):Chan10:RdTemp")
+  field(FTJ, "DOUBLE")
+  field(INPK, "$(P)$(DEV):ChanActive1")
+  field(FTK, "SHORT")
+  field(INPL, "$(P)$(DEV):ChanInactive1-val")
+  field(FTL, "DOUBLE")
+  field(NOVA, "10")
+  field(FTVA, "DOUBLE")
+  field(OUTA, "$(P)$(DEV):ChanSet1:Rd-Temp PP")
+#  field(FLNK, "$(P)$(DEV):ChanSet1:Rd-Temp")
+  field(SNAM, "fillArrProcess")
+}
+
+record(aai, "$(P)$(DEV):ChanSet1:Rd-Temp") {
+    field(NELM, "10")
+    field(FTVL, "DOUBLE")
+}
+
+record(ao, "$(P)$(DEV):ChanInactive1-val") {
+}
