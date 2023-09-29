@@ -9,6 +9,7 @@
 #include <subRecord.h>
 #include <aSubRecord.h>
 #include <epicsExport.h>
+#include <menuFtype.h>
 
 int fillArrDebug;
 
@@ -32,7 +33,7 @@ static long fillArrProcess(aSubRecord *precord)
 #define MAXN 80
 #define N 10
   double *p;
-
+  int n,bit;
 
   if (fillArrDebug > 5) {
     printf("Record %s called fillArrProcess(%p)\n",
@@ -45,18 +46,95 @@ static long fillArrProcess(aSubRecord *precord)
 	    *((double *) precord->i), *((double *) precord->j));
     printf ("Mask: %i\n", *((int *) precord->k));
     printf ("Fill value: %f\n", *((double *) precord->l));
+    printf ("Number of elements in outa (NOVA): %i\n", precord->nova);
+  }
+  if  (precord->ftva != menuFtypeDOUBLE) {
+    printf ("Wrong VALA field - must be menuFtypeDOUBLE\n");
+    return -1;
   }
   p = (double *) precord->vala;
-  *p++ = *((double *) precord->a);
-  *p++  = *((double *) precord->b);
-  *p++  = *((double *) precord->c);
+  n = precord->nova;
+  if (n-- > 0) {
+    bit = 1;
+    if (bit & *((int *) precord->k)) {
+      *p++ = *((double *) precord->a);
+    } else {
+      *p++ = *((double *) precord->l);
+    }
+  }
+  if (n-- > 0) {
+    bit = bit << 1;
+    if (bit & *((int *) precord->k)) {
+      *p++  = *((double *) precord->b);
+    } else {
+      *p++ = *((double *) precord->l);
+    }
+  }
+  if (n-- > 0) {
+    bit = bit << 1;
+    if (bit & *((int *) precord->k)) {
+      *p++  = *((double *) precord->c);
+    } else {
+      *p++ = *((double *) precord->l);
+    }
+  }
+  if (n-- > 0) {
+    bit = bit << 1;
+    if (bit & *((int *) precord->k)) {
+      *p++  = *((double *) precord->d);
+    } else {
+      *p++ = *((double *) precord->l);
+    }
+  }
+  if (n-- > 0) {
+    bit = bit << 1;
+    if (bit & *((int *) precord->k)) {
+      *p++  = *((double *) precord->e);
+    } else {
+      *p++ = *((double *) precord->l);
+    }
+  }
+  if (n-- > 0) {
+    bit = bit << 1;
+    if (bit & *((int *) precord->k)) {
+      *p++  = *((double *) precord->f);
+    } else {
+      *p++ = *((double *) precord->l);
+    }
+  }
+  if (n-- > 0) {
+    bit = bit << 1;
+    if (bit & *((int *) precord->k)) {
+      *p++  = *((double *) precord->g);
+    } else {
+      *p++ = *((double *) precord->l);
+    }
+  }
+  if (n-- > 0) {
+    bit = bit << 1;
+    if (bit & *((int *) precord->k)) {
+      *p++  = *((double *) precord->h);
+    } else {
+      *p++ = *((double *) precord->l);
+    }
+  }
+  if (n-- > 0) {
+    bit = bit << 1;
+    if (bit & *((int *) precord->k)) {
+      *p++  = *((double *) precord->i);
+    } else {
+      *p++ = *((double *) precord->l);
+    }
+  }
+  if (n-- > 0) {
+    bit = bit << 1;
+    if (bit & *((int *) precord->k)) {
+      *p++  = *((double *) precord->j);
+    } else {
+      *p++ = *((double *) precord->l);
+    }
+  }
 
-  /* strncpy ((char *) precord->vala, timestring, 40); */
-  /* if (fillArrDebug > 4) {   */
-  /*   printf ("Output: p->vala: %p: %s\n", (void*) (precord->vala),  */
-  /* 	    (char *)  precord->vala); */
-  /*   printf ("Old output: %s\n",  (char *)  precord->ovla); */
-  /* }  */
   return 0;
 }
 

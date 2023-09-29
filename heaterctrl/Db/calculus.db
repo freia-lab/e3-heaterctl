@@ -1,6 +1,7 @@
-record(aSub, "$(P)$(DEV):Set1-arr")
+record(aSub, "$(P)Pipe-1:fill-arr")
 {
   field(DESC, "Create an array of data")
+  field(SCAN, "10 second")
   field(INPA, "$(P)$(DEV):Chan01:RdTemp")
   field(FTA, "DOUBLE")
   field(INPB, "$(P)$(DEV):Chan02:RdTemp")
@@ -27,15 +28,72 @@ record(aSub, "$(P)$(DEV):Set1-arr")
   field(FTL, "DOUBLE")
   field(NOVA, "10")
   field(FTVA, "DOUBLE")
-  field(OUTA, "$(P)$(DEV):ChanSet1:Rd-Temp PP")
+  field(OUTA, "$(P)Pipe-1:Rd-Temp PP")
+#  field(FLNK, "$(P)Pipe-1:Rd-Temp")
+  field(SNAM, "fillArrProcess")
+}
+record(aSub, "$(P)Pipe-2:fill-arr")
+{
+  field(DESC, "Create an array of data")
+  field(SCAN, "10 second")
+  field(INPA, "$(P)$(DEV):Chan11:RdTemp")
+  field(FTA, "DOUBLE")
+  field(INPB, "$(P)$(DEV):Chan12:RdTemp")
+  field(FTB, "DOUBLE")
+  field(INPC, "$(P)$(DEV):Chan13:RdTemp")
+  field(FTC, "DOUBLE")
+  field(INPD, "$(P)$(DEV):Chan14:RdTemp")
+  field(FTD, "DOUBLE")
+  field(INPE, "$(P)$(DEV):Chan15:RdTemp")
+  field(FTE, "DOUBLE")
+  field(INPF, "$(P)$(DEV):Chan16:RdTemp")
+  field(FTF, "DOUBLE")
+  field(INPG, "$(P)$(DEV):Chan17:RdTemp")
+  field(FTG, "DOUBLE")
+  field(INPH, "$(P)$(DEV):Chan18:RdTemp")
+  field(FTH, "DOUBLE")
+  field(INPI, "$(P)$(DEV):Chan19:RdTemp")
+  field(FTI, "DOUBLE")
+  field(INPJ, "$(P)$(DEV):Chan20:RdTemp")
+  field(FTJ, "DOUBLE")
+  field(INPK, "$(P)$(DEV):ChanActive2")
+  field(FTK, "SHORT")
+  field(INPL, "$(P)$(DEV):ChanInactive2-val")
+  field(FTL, "DOUBLE")
+  field(NOVA, "10")
+  field(FTVA, "DOUBLE")
+  field(OUTA, "$(P)Pipe-2:Rd-Temp PP")
 #  field(FLNK, "$(P)$(DEV):ChanSet1:Rd-Temp")
   field(SNAM, "fillArrProcess")
 }
 
-record(aai, "$(P)$(DEV):ChanSet1:Rd-Temp") {
+record(aai, "$(P)Pipe-1:Rd-Temp") {
+    field(NELM, "10")
+    field(FTVL, "DOUBLE")
+}
+record(aai, "$(P)Pipe-2:Rd-Temp") {
     field(NELM, "10")
     field(FTVL, "DOUBLE")
 }
 
 record(ao, "$(P)$(DEV):ChanInactive1-val") {
+   field(FLNK, "$(P)ChanSet1:Min-indx")
+}
+record(ao, "$(P)$(DEV):ChanInactive2-val") {
+   field(FLNK, "$(P)ChanSet2:Min-indx")
+}
+
+record(acalcout, "$(P)ChanSet1:Min-indx") {
+    field(NELM, "10")
+    field(INAA, "$(P)Pipe-1:Rd-Temp")
+    field(CALC, "IXMIN(AA)")
+    field(SCAN, "10 second")
+#    field(FLNK, "$(P)ai")
+}
+record(acalcout, "$(P)ChanSet2:Min-indx") {
+    field(NELM, "10")
+    field(INAA, "$(P)Pipe-2:Rd-Temp")
+    field(CALC, "IXMIN(AA)")
+    field(SCAN, "10 second")
+#    field(FLNK, "$(P)ai")
 }
