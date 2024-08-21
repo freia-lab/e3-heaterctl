@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2023-09-11 14:52:37 by konrad-->
+<!--Saved on 2024-08-20 15:22:55 by konrad-->
 <display version="2.0.0">
   <name>heaters-ctrl</name>
   <macros>
@@ -90,7 +90,7 @@
       <CHAN>1</CHAN>
       <DEV>HMP4040</DEV>
     </macros>
-    <file>../../freia-symbols/display-builder/heater-ctrl/stat_template.bob</file>
+    <file>../freia-symbols/display-builder/heater-ctrl/stat_template.bob</file>
     <x>1120</x>
     <y>310</y>
     <width>360</width>
