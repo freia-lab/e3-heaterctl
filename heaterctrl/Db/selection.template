@@ -4,13 +4,12 @@
 # And if Median Signal is chosen, VAL is set equal to the median value of the defined value fields (A-L). 
 #
 # The PREC field determines the floating point precision with which to display VAL. 
-record(sel, "CstatV-AC:DAQ6510:Selected:RdTemp")
+record(sel, "$(P)$(DEV)")
 {
   field(DESC, "Select highest value")
   field(SCAN, "Passive")
-  field(INPA, "CstatV-AC:DAQ6510:Chan01:RdTemp")
-  field(INPB, "CstatV-AC:DAQ6510:Chan02:RdTemp")
-#  field(INPC, "$(P)$(DEV):Chan03:RdTemp")
+  field(INPA, "$(P)Chan01:RdTemp")
+  field(INPB, "$(P)Chan02:RdTemp")
   field(SELM, "High Signal")
   field(PREC, "3")
 }

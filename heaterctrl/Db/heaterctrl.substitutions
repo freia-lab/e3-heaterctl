@@ -38,3 +38,8 @@ file "pid_autosave.template" { pattern
 {P,          PID}
 {CstatV-AC:, PID1}
 }
+
+file "selection.template" { pattern
+{P,     DEV}
+{CstatV-AC:DAQ6510:, Selected:RdTemp}
+}
