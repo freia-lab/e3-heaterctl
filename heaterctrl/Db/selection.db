@@ -1,0 +1,16 @@
+# The High Signal, Low Signal, and Median Signal algorithms do not use SELN or NVL. 
+# If High Signal is chosen, VAL is set equal to the highest value out of all the defined value fields (A-L). 
+# If Low Signal is chosen, VAL is set equal to lowest value of all the defined fields (A-L). 
+# And if Median Signal is chosen, VAL is set equal to the median value of the defined value fields (A-L). 
+#
+# The PREC field determines the floating point precision with which to display VAL. 
+record(sel, "CstatV-AC:DAQ6510:Selected:RdTemp")
+{
+  field(DESC, "Select highest value")
+  field(SCAN, "Passive")
+  field(INPA, "CstatV-AC:DAQ6510:Chan01:RdTemp")
+  field(INPB, "CstatV-AC:DAQ6510:Chan02:RdTemp")
+#  field(INPC, "$(P)$(DEV):Chan03:RdTemp")
+  field(SELM, "High Signal")
+  field(PREC, "3")
+}
