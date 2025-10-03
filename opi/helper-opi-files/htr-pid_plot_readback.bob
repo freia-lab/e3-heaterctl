@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-10-03 15:35:38 by marek-->
+<display version="2.0.0">
+  <name>pid_plot_readback</name>
+  <x>476</x>
+  <y>530</y>
+  <width>602</width>
+  <height>431</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="stripchart" version="2.1.0">
+    <name>strip chart #6</name>
+    <x>1</x>
+    <y>1</y>
+    <width>600</width>
+    <height>400</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <title>$(P)$(PID) Temperature setpoint &amp; readback</title>
+    <title_font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </title_font>
+    <show_toolbar>false</show_toolbar>
+    <start>30 second</start>
+    <y_axes>
+      <y_axis>
+        <title></title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>false</show_grid>
+        <visible>true</visible>
+        <color>
+          <color name="Text" red="25" green="25" blue="25">
+          </color>
+        </color>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <y_pv>$(P)$(PID).VAL</y_pv>
+        <axis>0</axis>
+        <trace_type>2</trace_type>
+        <color>
+          <color red="253" green="0" blue="0">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+      <trace>
+        <name>$(traces[1].y_pv)</name>
+        <y_pv>$(P)$(PID).CVAL</y_pv>
+        <axis>0</axis>
+        <trace_type>2</trace_type>
+        <color>
+          <color red="10" green="0" blue="184">
+          </color>
+        </color>
+        <line_width>2</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #11</name>
+    <pv_name>$(P)$(PID).HOPR</pv_name>
+    <x>120</x>
+    <y>410</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #15</name>
+    <pv_name>$(P)$(PID).LOPR</pv_name>
+    <x>300</x>
+    <y>410</y>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #19</name>
+    <text> min:</text>
+    <x>260</x>
+    <y>410</y>
+    <width>35</width>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #22</name>
+    <text>Display max:</text>
+    <x>20</x>
+    <y>410</y>
+    <height>18</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>related display #25</name>
+    <actions>
+      <action type="open_display">
+        <description>Plot</description>
+        <file>pid_plot_readback.opi</file>
+        <target>replace</target>
+      </action>
+    </actions>
+    <text></text>
+    <x>510</x>
+    <y>410</y>
+    <width>70</width>
+    <height>20</height>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #28</name>
+    <text>Replot</text>
+    <x>450</x>
+    <y>410</y>
+    <width>47</width>
+    <height>19</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

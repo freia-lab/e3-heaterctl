@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-10-03 14:12:00 by marek-->
+<display version="2.0.0">
+  <name>pid_parameters</name>
+  <x>632</x>
+  <y>299</y>
+  <width>296</width>
+  <height>250</height>
+  <grid_visible>false</grid_visible>
+  <grid_step_x>5</grid_step_x>
+  <widget type="group" version="3.0.0">
+    <name>composite #6</name>
+    <width>296</width>
+    <height>250</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>text #9</name>
+      <text>P</text>
+      <x>157</x>
+      <width>10</width>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #12</name>
+      <pv_name>$(P)$(PID).P</pv_name>
+      <x>174</x>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #16</name>
+      <text>I</text>
+      <x>157</x>
+      <y>25</y>
+      <width>5</width>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #19</name>
+      <text>KP</text>
+      <x>10</x>
+      <width>21</width>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #22</name>
+      <pv_name>$(P)$(PID).KP</pv_name>
+      <x>35</x>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #26</name>
+      <text>KI</text>
+      <x>10</x>
+      <y>25</y>
+      <width>16</width>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #29</name>
+      <pv_name>$(P)$(PID).KI</pv_name>
+      <x>35</x>
+      <y>25</y>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #33</name>
+      <text>D</text>
+      <x>157</x>
+      <y>50</y>
+      <width>13</width>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #36</name>
+      <pv_name>$(P)$(PID).D</pv_name>
+      <x>174</x>
+      <y>50</y>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #40</name>
+      <text>KD</text>
+      <x>10</x>
+      <y>50</y>
+      <width>23</width>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #43</name>
+      <pv_name>$(P)$(PID).KD</pv_name>
+      <x>35</x>
+      <y>50</y>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #47</name>
+      <text>Output</text>
+      <x>31</x>
+      <y>129</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #50</name>
+      <pv_name>$(P)$(PID).OVAL</pv_name>
+      <x>116</x>
+      <y>129</y>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #54</name>
+      <text>Error</text>
+      <x>31</x>
+      <y>104</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>text update #57</name>
+      <pv_name>$(P)$(PID).ERR</pv_name>
+      <x>116</x>
+      <y>104</y>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>2</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #61</name>
+      <pv_name>$(P)$(PID).I</pv_name>
+      <x>174</x>
+      <y>25</y>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #65</name>
+      <text>Delta time</text>
+      <x>31</x>
+      <y>79</y>
+      <width>80</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #68</name>
+      <pv_name>$(P)$(PID).DT</pv_name>
+      <x>116</x>
+      <y>79</y>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #72</name>
+      <text>Setpoint high limit</text>
+      <y>180</y>
+      <width>190</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #75</name>
+      <pv_name>$(P)$(PID).HOPR</pv_name>
+      <x>195</x>
+      <y>180</y>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #79</name>
+      <text>Setpoint low limit</text>
+      <x>10</x>
+      <y>155</y>
+      <width>180</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #82</name>
+      <pv_name>$(P)$(PID).LOPR</pv_name>
+      <x>195</x>
+      <y>155</y>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #86</name>
+      <text>Output high limit</text>
+      <x>1</x>
+      <y>230</y>
+      <width>190</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #89</name>
+      <pv_name>$(P)$(PID).DRVH</pv_name>
+      <x>196</x>
+      <y>230</y>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>text #93</name>
+      <text>Output low limit</text>
+      <x>11</x>
+      <y>205</y>
+      <width>180</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>text entry #96</name>
+      <pv_name>$(P)$(PID).DRVL</pv_name>
+      <x>196</x>
+      <y>205</y>
+      <format>1</format>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+</display>

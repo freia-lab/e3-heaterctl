@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-10-03 15:38:26 by marek-->
+<display version="2.0.0">
+  <name>htr-pid-main</name>
+  <macros>
+    <P>CstatV-AC:</P>
+  </macros>
+  <width>1260</width>
+  <height>850</height>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <macros>
+      <TITLE></TITLE>
+    </macros>
+    <file>htr-pid_control.bob</file>
+    <x>620</x>
+    <width>300</width>
+    <height>260</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_1</name>
+    <macros>
+      <TITLE></TITLE>
+    </macros>
+    <file>htr-pid_parameters.bob</file>
+    <x>620</x>
+    <y>260</y>
+    <width>310</width>
+    <height>260</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_2</name>
+    <macros>
+      <TITLE></TITLE>
+    </macros>
+    <file>htr-pid_plot_control.bob</file>
+    <width>620</width>
+    <height>410</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_3</name>
+    <macros>
+      <TITLE></TITLE>
+    </macros>
+    <file>htr-pid_plot_readback.bob</file>
+    <y>410</y>
+    <width>620</width>
+    <height>440</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_4</name>
+    <macros>
+      <TITLE></TITLE>
+    </macros>
+    <file>htr-pid_extra.bob</file>
+    <x>620</x>
+    <y>580</y>
+    <width>460</width>
+    <height>270</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_5</name>
+    <macros>
+      <DEV>HMP4040</DEV>
+    </macros>
+    <file>htr-PSU_control.bob</file>
+    <x>930</x>
+    <y>90</y>
+    <width>330</width>
+    <height>460</height>
+  </widget>
+</display>
