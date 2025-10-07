@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-10-03 15:35:38 by marek-->
+<!--Saved on 2025-10-07 11:26:58 by marek-->
 <display version="2.0.0">
-  <name>pid_plot_readback</name>
+  <name>htr-pid_plot_readback</name>
   <x>476</x>
   <y>530</y>
   <width>602</width>
@@ -115,7 +115,7 @@
     <x>260</x>
     <y>410</y>
     <width>35</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="16.0">
       </font>
@@ -127,7 +127,8 @@
     <text>Display max:</text>
     <x>20</x>
     <y>410</y>
-    <height>18</height>
+    <width>92</width>
+    <height>19</height>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="16.0">
       </font>
@@ -139,7 +140,7 @@
     <actions>
       <action type="open_display">
         <description>Plot</description>
-        <file>pid_plot_readback.opi</file>
+        <file>htr-pid_plot_readback.opi</file>
         <target>replace</target>
       </action>
     </actions>

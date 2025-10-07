@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-10-03 15:16:57 by marek-->
+<!--Saved on 2025-10-07 11:33:31 by marek-->
 <display version="2.0.0">
-  <name>pid_control</name>
+  <name>htr-pid_control</name>
   <x>152</x>
   <y>108</y>
   <width>300</width>
@@ -130,22 +130,22 @@
     <actions>
       <action type="open_display">
         <description>Plot setpoint and readback</description>
-        <file>pid_plot_readback.opi</file>
+        <file>htr-pid_plot_readback.opi</file>
         <target>tab</target>
       </action>
       <action type="open_display">
         <description>Plot control value</description>
-        <file>pid_plot_control.opi</file>
+        <file>htr-pid_plot_control.opi</file>
         <target>tab</target>
       </action>
       <action type="open_display">
         <description>PID parameters</description>
-        <file>pid_parameters.opi</file>
+        <file>htr-pid_parameters.opi</file>
         <target>tab</target>
       </action>
       <action type="open_display">
         <description>PID limits</description>
-        <file>yyTransform_full.opi</file>
+        <file>htr-yyTransform_full.opi</file>
         <macros>
           <T>$(PID)_limits</T>
         </macros>
@@ -153,7 +153,7 @@
       </action>
       <action type="open_display">
         <description>PID input calc</description>
-        <file>yyTransform_full.opi</file>
+        <file>htr-yyTransform_full.opi</file>
         <macros>
           <T>$(PID)_incalc</T>
         </macros>
