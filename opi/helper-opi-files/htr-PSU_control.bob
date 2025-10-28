@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-10-03 14:44:57 by marek-->
+<!--Saved on 2025-10-28 17:38:15 by marek-->
 <display version="2.0.0">
   <name>Channel</name>
   <width>350</width>
   <height>450</height>
   <widget type="led" version="2.0.0">
     <name>LED_6</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):sOutpSel</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):sOutpSel</pv_name>
     <x>192</x>
     <width>108</width>
     <height>30</height>
@@ -23,7 +23,7 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):CurrMode</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):CurrMode</pv_name>
     <x>60</x>
     <y>249</y>
     <width>15</width>
@@ -39,7 +39,7 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_1</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):FuseTrip</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):FuseTrip</pv_name>
     <x>60</x>
     <y>320</y>
     <width>15</width>
@@ -51,7 +51,7 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_2</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):TempOver</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):TempOver</pv_name>
     <x>60</x>
     <y>277</y>
     <width>15</width>
@@ -63,7 +63,7 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_3</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):VoltMode</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):VoltMode</pv_name>
     <x>60</x>
     <y>229</y>
     <width>15</width>
@@ -79,7 +79,7 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_4</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):OvpTrip</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):OvpTrip</pv_name>
     <x>60</x>
     <y>298</y>
     <width>15</width>
@@ -133,8 +133,8 @@
     <name>Label_5</name>
     <text>Channel $(CHAN)</text>
     <x>60</x>
-    <width>204</width>
-    <height>26</height>
+    <width>175</width>
+    <height>21</height>
     <font>
       <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -143,7 +143,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):RdSetVolt</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):RdSetVolt</pv_name>
     <x>92</x>
     <y>62</y>
     <width>60</width>
@@ -151,7 +151,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_1</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):RdSetCurr</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):RdSetCurr</pv_name>
     <x>162</x>
     <y>62</y>
     <width>60</width>
@@ -159,7 +159,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_2</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):RdMeasVolt</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):RdMeasVolt</pv_name>
     <x>92</x>
     <y>99</y>
     <width>60</width>
@@ -172,7 +172,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_3</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):RdMeasCurr</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):RdMeasCurr</pv_name>
     <x>162</x>
     <y>99</y>
     <width>60</width>
@@ -217,7 +217,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_4</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):CalcSetPow</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):CalcSetPow</pv_name>
     <x>238</x>
     <y>62</y>
     <width>60</width>
@@ -225,7 +225,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_5</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):CalcMeasPow</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):CalcMeasPow</pv_name>
     <x>238</x>
     <y>99</y>
     <width>60</width>
@@ -265,7 +265,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>Text Entry</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):SetVolt</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):SetVolt</pv_name>
     <x>39</x>
     <y>173</y>
     <width>50</width>
@@ -281,7 +281,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>Text Entry_1</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):SetCurr</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):SetCurr</pv_name>
     <x>124</x>
     <y>173</y>
     <width>50</width>
@@ -305,7 +305,7 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_5</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):sActive</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):sActive</pv_name>
     <x>300</x>
     <y>174</y>
   </widget>
@@ -319,7 +319,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>Text Entry_2</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):SetOVP</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):SetOVP</pv_name>
     <x>57</x>
     <y>379</y>
     <width>63</width>
@@ -327,7 +327,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_6</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):RdOVP</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):RdOVP</pv_name>
     <x>125</x>
     <y>379</y>
     <width>62</width>
@@ -335,7 +335,7 @@
   </widget>
   <widget type="bool_button" version="2.0.0">
     <name>Boolean Button_1</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):setOVPMode</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):setOVPMode</pv_name>
     <x>57</x>
     <y>410</y>
     <width>80</width>
@@ -360,7 +360,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_7</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):getOVPMode</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):getOVPMode</pv_name>
     <x>139</x>
     <y>411</y>
     <width>91</width>
@@ -379,7 +379,7 @@
         <value>0</value>
       </action>
     </actions>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):setOVPCle</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):setOVPCle</pv_name>
     <text>Reset OVP</text>
     <x>270</x>
     <y>295</y>
@@ -392,7 +392,7 @@
   </widget>
   <widget type="choice" version="2.0.0">
     <name>Choice Button</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):cActive</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):cActive</pv_name>
     <x>200</x>
     <y>172</y>
     <width>89</width>
@@ -404,7 +404,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_8</name>
-    <pv_name>$(P)$(DEV):Chan$(CHAN):sOutpSel</pv_name>
+    <pv_name>$(PSU)$(DEV):Chan$(CHAN):sOutpSel</pv_name>
     <x>200</x>
     <width>103</width>
     <height>30</height>

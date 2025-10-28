@@ -2,10 +2,10 @@ file pid_control.db
 {
 pattern
 {P,          PID,                              INP,                             OUT, LOPR,   HOPR, DRVL, DRVH, PREC,  KP,  KI,   KD,       SCAN}
-{CstatV-AC:, PID1, CstatV-AC:DAQ6510:Chan11:RdTemp, CstatV-AC:HMP4040:Chan1:SetVolt,    0,  100,      0,    5,    3, 0.2,  3.,   0.,  "Passive"}
-{CstatV-AC:, PID2, CstatV-AC:DAQ6510:Chan13:RdTemp, CstatV-AC:HMP4040:Chan2:SetVolt,    0,  100,      0,    5,    3, 0.2,  3.,   0.,  "Passive"}
-{CstatV-AC:, PID3, CstatV-AC:DAQ6510:Chan15:RdTemp, CstatV-AC:HMP4040:Chan3:SetVolt,    0,  100,      0,    5,    3, 0.2,  3.,   0.,  "Passive"}
-{CstatV-AC:, PID4, CstatV-AC:DAQ6510:Chan16:RdTemp, CstatV-AC:HMP4040:Chan4:SetVolt,    0,  100,      0,    5,    3, 0.2,  3.,   0.,  "Passive"}
+{CstatV-AC:, PID1, CstatV-AC2:TT1A:sRdV, CstatV-AC2:EH1AB-V:cSetV,    0,  100,      0,    5,    3, 0.2,  3.,   0.,  "Passive"}
+{CstatV-AC:, PID2, CstatV-AC2:TT2A:sRdV, CstatV-AC2:EH2AB-V:cSetV,    0,  100,      0,    5,    3, 0.2,  3.,   0.,  "Passive"}
+{CstatV-AC:, PID3, CstatV-AC2:TT3A:sRdV, CstatV-AC2:EH3AB-V:cSetV,    0,  100,      0,    5,    3, 0.2,  3.,   0.,  "Passive"}
+{CstatV-AC:, PID4, CstatV-AC2:TT4A:sRdV, CstatV-AC2:EH4AB-V:cSetV,    0,  100,      0,    5,    3, 0.2,  3.,   0.,  "Passive"}
 }
 
 file "daq6510-gen.template" { pattern
