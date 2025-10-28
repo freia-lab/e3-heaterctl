@@ -1,6 +1,6 @@
 EPICS_MODULE_NAME := heaterctrl
 
-E3_MODULE_VERSION := 0.4.1
+E3_MODULE_VERSION := 0.4.2
 E3_MODULE_NAME := heaterctrl
 E3_MODULE_SRC_PATH := $(EPICS_MODULE_NAME)
 E3_MODULE_MAKEFILE := $(E3_MODULE_NAME).Makefile
@@ -11,6 +11,7 @@ E3_MODULE_MAKEFILE := $(E3_MODULE_NAME).Makefile
 #
 # These will be automatically picked up by the build system.
 
+HMP40x0_DEP_VERSION := 1.2.0+0
 DAQ6510_DEP_VERSION := 0.7.1+0
 STD_DEP_VERSION := 3.6.3+2
 

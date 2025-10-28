@@ -1,6 +1,6 @@
 # This should be a test or example startup script
 
-require hmp40x0
+#require hmp40x0
 require heaterctrl
 
 addScan(60)
@@ -8,7 +8,7 @@ addScan(30)
 
 epicsEnvSet("IOCNAME", "ioc27-htrctrl")
 epicsEnvSet("IP", "192.168.10.44")
-epicsEnvSet("P_DAQ6510", "CstatV-AC:")
+epicsEnvSet("P", "CstatV-AC:")
 epicsEnvSet("P_HMP1", "CstatV-AC1:")
 epicsEnvSet("P_HMP2", "CstatV-AC2:")
 epicsEnvSet("TOP", "/tmp/autosave")
