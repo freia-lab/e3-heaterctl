@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-10-30 13:27:48 by marek-->
+<display version="2.0.0">
+  <name>htr-oper-view-top</name>
+  <width>1000</width>
+  <height>1000</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>$(AC)</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>500</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>$(AC)T1B</text>
+    <x>630</x>
+    <y>798</y>
+    <width>140</width>
+    <foreground_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>CstatV-AC2:TT1B:sRdV</pv_name>
+    <x>770</x>
+    <y>798</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <class>COMMENT</class>
+    <text>Overview of heaters and temperature sensors</text>
+    <x>360</x>
+    <y>20</y>
+    <width>470</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_1</name>
+    <x>580</x>
+    <y>523</y>
+    <width>10</width>
+    <height>270</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="270.0">
+      </point>
+      <point x="10.0" y="270.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="255" green="153" blue="102">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_2</name>
+    <x>600</x>
+    <y>523</y>
+    <width>10</width>
+    <height>270</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="270.0">
+      </point>
+      <point x="10.0" y="270.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="255" green="153" blue="102">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_5</name>
+    <x>580</x>
+    <y>383</y>
+    <width>10</width>
+    <height>110</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="110.0">
+      </point>
+      <point x="10.0" y="110.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="255" green="153" blue="102">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_7</name>
+    <x>600</x>
+    <y>383</y>
+    <width>10</width>
+    <height>110</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="110.0">
+      </point>
+      <point x="10.0" y="110.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="255" green="153" blue="102">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_8</name>
+    <x>580</x>
+    <y>243</y>
+    <width>10</width>
+    <height>110</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="110.0">
+      </point>
+      <point x="10.0" y="110.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="255" green="153" blue="102">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_9</name>
+    <x>600</x>
+    <y>243</y>
+    <width>10</width>
+    <height>110</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="110.0">
+      </point>
+      <point x="10.0" y="110.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="255" green="153" blue="102">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_10</name>
+    <x>580</x>
+    <y>103</y>
+    <width>10</width>
+    <height>110</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="110.0">
+      </point>
+      <point x="10.0" y="110.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="255" green="153" blue="102">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_11</name>
+    <x>600</x>
+    <y>103</y>
+    <width>10</width>
+    <height>110</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="110.0">
+      </point>
+      <point x="10.0" y="110.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color red="255" green="153" blue="102">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>580</x>
+    <y>503</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_1</name>
+    <x>600</x>
+    <y>503</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_2</name>
+    <x>580</x>
+    <y>803</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_3</name>
+    <x>600</x>
+    <y>803</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_4</name>
+    <x>590</x>
+    <y>363</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_5</name>
+    <x>580</x>
+    <y>223</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_6</name>
+    <x>600</x>
+    <y>223</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_7</name>
+    <x>590</x>
+    <y>83</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>Polygon</name>
+    <x>540</x>
+    <y>53</y>
+    <width>110</width>
+    <points>
+      <point x="0.0" y="20.0">
+      </point>
+      <point x="0.0" y="10.0">
+      </point>
+      <point x="36.666666666666664" y="10.0">
+      </point>
+      <point x="36.666666666666664" y="0.0">
+      </point>
+      <point x="73.33333333333333" y="0.0">
+      </point>
+      <point x="73.33333333333333" y="10.0">
+      </point>
+      <point x="110.0" y="10.0">
+      </point>
+      <point x="110.0" y="20.0">
+      </point>
+      <point x="0.0" y="20.0">
+      </point>
+      <point x="0.0" y="20.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="255" alpha="50">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="50" green="50" blue="255" alpha="61">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>Polygon_1</name>
+    <x>560</x>
+    <y>533</y>
+    <width>70</width>
+    <height>12</height>
+    <points>
+      <point x="0.0" y="12.0">
+      </point>
+      <point x="0.0" y="6.0">
+      </point>
+      <point x="23.333333333333332" y="6.0">
+      </point>
+      <point x="23.333333333333332" y="0.0">
+      </point>
+      <point x="46.666666666666664" y="0.0">
+      </point>
+      <point x="46.666666666666664" y="6.0">
+      </point>
+      <point x="70.0" y="6.0">
+      </point>
+      <point x="70.0" y="12.0">
+      </point>
+      <point x="0.0" y="12.0">
+      </point>
+      <point x="0.0" y="12.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="255" alpha="50">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="50" green="50" blue="255" alpha="61">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_12</name>
+    <x>570</x>
+    <y>823</y>
+    <width>1</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_13</name>
+    <x>570</x>
+    <y>543</y>
+    <width>50</width>
+    <height>280</height>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_14</name>
+    <x>290</x>
+    <y>393</y>
+    <width>1</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_15</name>
+    <x>570</x>
+    <y>543</y>
+    <width>50</width>
+    <height>280</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="280.0">
+      </point>
+      <point x="50.0" y="280.0">
+      </point>
+      <point x="50.0" y="0.0">
+      </point>
+      <point x="50.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_style>2</line_style>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_16</name>
+    <x>560</x>
+    <y>533</y>
+    <width>1</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_17</name>
+    <x>560</x>
+    <y>73</y>
+    <width>70</width>
+    <height>470</height>
+    <points>
+      <point x="0.0" y="470.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="70.0" y="0.0">
+      </point>
+      <point x="70.0" y="470.0">
+      </point>
+      <point x="70.0" y="470.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_style>2</line_style>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>$(AC)T1A</text>
+    <x>310</x>
+    <y>798</y>
+    <width>140</width>
+    <foreground_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>CstatV-AC2:TT1A:sRdV</pv_name>
+    <x>450</x>
+    <y>798</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>$(AC)T2B</text>
+    <x>630</x>
+    <y>498</y>
+    <width>140</width>
+    <foreground_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>CstatV-AC2:TT2B:sRdV</pv_name>
+    <x>770</x>
+    <y>498</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>$(AC)T3A</text>
+    <x>310</x>
+    <y>358</y>
+    <width>140</width>
+    <foreground_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>CstatV-AC2:TT3A:sRdV</pv_name>
+    <x>450</x>
+    <y>358</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>$(AC)T4B</text>
+    <x>630</x>
+    <y>218</y>
+    <width>140</width>
+    <foreground_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>CstatV-AC2:TT4B:sRdV</pv_name>
+    <x>770</x>
+    <y>218</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>$(AC)T5A</text>
+    <x>310</x>
+    <y>78</y>
+    <width>140</width>
+    <foreground_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_5</name>
+    <pv_name>CstatV-AC2:TT5A:sRdV</pv_name>
+    <x>450</x>
+    <y>78</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>$(AC)T2A</text>
+    <x>310</x>
+    <y>498</y>
+    <width>140</width>
+    <foreground_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>CstatV-AC2:TT2A:sRdV</pv_name>
+    <x>450</x>
+    <y>498</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_9</name>
+    <text>$(AC)T4A</text>
+    <x>310</x>
+    <y>218</y>
+    <width>140</width>
+    <foreground_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="102" blue="51">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_7</name>
+    <pv_name>CstatV-AC2:TT4A:sRdV</pv_name>
+    <x>450</x>
+    <y>218</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_19</name>
+    <x>587</x>
+    <y>387</y>
+    <width>16</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="16.0" y="0.0">
+      </point>
+    </points>
+    <line_width>6</line_width>
+    <line_color>
+      <color red="255" green="0" blue="0" alpha="230">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_20</name>
+    <x>587</x>
+    <y>527</y>
+    <width>16</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="16.0" y="0.0">
+      </point>
+    </points>
+    <line_width>6</line_width>
+    <line_color>
+      <color red="255" green="0" blue="0" alpha="230">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_21</name>
+    <x>587</x>
+    <y>247</y>
+    <width>16</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="16.0" y="0.0">
+      </point>
+    </points>
+    <line_width>6</line_width>
+    <line_color>
+      <color red="255" green="0" blue="0" alpha="230">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_22</name>
+    <x>587</x>
+    <y>107</y>
+    <width>16</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="16.0" y="0.0">
+      </point>
+    </points>
+    <line_width>6</line_width>
+    <line_color>
+      <color red="255" green="0" blue="0" alpha="230">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_10</name>
+    <text>$(AC)H1AB-POWER</text>
+    <x>630</x>
+    <y>633</y>
+    <width>220</width>
+    <foreground_color>
+      <color red="255" green="153" blue="102">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="ActiveText" red="254" green="194" blue="81">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_8</name>
+    <pv_name>=`CstatV-AC2:EH1AB-V:sRdV`*`CstatV-AC2:EH1AB-I:sRdV`</pv_name>
+    <x>630</x>
+    <y>653</y>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_11</name>
+    <text>$(AC)H2AB-POWER</text>
+    <x>640</x>
+    <y>413</y>
+    <width>220</width>
+    <foreground_color>
+      <color red="255" green="153" blue="102">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="ActiveText" red="254" green="194" blue="81">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_9</name>
+    <pv_name>=`CstatV-AC2:EH2AB-V:sRdV`*`CstatV-AC2:EH2AB-I:sRdV`</pv_name>
+    <x>640</x>
+    <y>433</y>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_12</name>
+    <text>$(AC)H3AB-POWER</text>
+    <x>640</x>
+    <y>283</y>
+    <width>220</width>
+    <foreground_color>
+      <color red="255" green="153" blue="102">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="ActiveText" red="254" green="194" blue="81">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_10</name>
+    <pv_name>=`CstatV-AC2:EH3AB-V:sRdV`*`CstatV-AC2:EH3AB-I:sRdV`</pv_name>
+    <x>640</x>
+    <y>303</y>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_13</name>
+    <text>$(AC)H4AB-POWER</text>
+    <x>640</x>
+    <y>123</y>
+    <width>220</width>
+    <foreground_color>
+      <color red="255" green="153" blue="102">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="ActiveText" red="254" green="194" blue="81">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_11</name>
+    <pv_name>=`CstatV-AC2:EH4AB-V:sRdV`*`CstatV-AC2:EH4AB-I:sRdV`</pv_name>
+    <x>640</x>
+    <y>143</y>
+    <show_units>false</show_units>
+  </widget>
+</display>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-10-30 12:16:54 by marek-->
+<display version="2.0.0">
+  <name>top-heaterctrl</name>
+  <macros>
+    <P>CstatV-AC:</P>
+  </macros>
+  <width>1450</width>
+  <height>970</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>Anti Cryostat Heaters Control</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>650</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="navtabs" version="2.0.0">
+    <name>Navigation Tabs</name>
+    <tabs>
+      <tab>
+        <name>OPERATOR VIEW</name>
+        <file>helper-opi-files/htr-oper-view-top.bob</file>
+        <macros>
+          <P>CstatV-AC:</P>
+          <AC>CstatV-AC2:</AC>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>ENGINEER VIEW</name>
+        <file>helper-opi-files/htr-eng-view-top.bob</file>
+        <macros>
+          <P>CstatV-AC:</P>
+          <PID>PID2</PID>
+          <CHAN>2</CHAN>
+          <PSU>CstatV-AC2:</PSU>
+        </macros>
+        <group_name></group_name>
+      </tab>
+    </tabs>
+    <x>20</x>
+    <y>60</y>
+    <width>1400</width>
+    <height>910</height>
+    <direction>0</direction>
+    <tab_width>200</tab_width>
+  </widget>
+</display>
